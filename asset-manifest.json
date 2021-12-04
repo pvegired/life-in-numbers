@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/life-in-numbers/static/css/main.a617e044.chunk.css",
-    "main.js": "/life-in-numbers/static/js/main.d1a727ac.chunk.js",
-    "main.js.map": "/life-in-numbers/static/js/main.d1a727ac.chunk.js.map",
-    "runtime-main.js": "/life-in-numbers/static/js/runtime-main.843992d3.js",
-    "runtime-main.js.map": "/life-in-numbers/static/js/runtime-main.843992d3.js.map",
-    "static/js/2.20729ba4.chunk.js": "/life-in-numbers/static/js/2.20729ba4.chunk.js",
-    "static/js/2.20729ba4.chunk.js.map": "/life-in-numbers/static/js/2.20729ba4.chunk.js.map",
-    "static/js/3.b7746949.chunk.js": "/life-in-numbers/static/js/3.b7746949.chunk.js",
-    "static/js/3.b7746949.chunk.js.map": "/life-in-numbers/static/js/3.b7746949.chunk.js.map",
+    "main.css": "/life-in-numbers/static/css/main.e2c55e50.chunk.css",
+    "main.js": "/life-in-numbers/static/js/main.8f5a7fa8.chunk.js",
+    "main.js.map": "/life-in-numbers/static/js/main.8f5a7fa8.chunk.js.map",
+    "runtime-main.js": "/life-in-numbers/static/js/runtime-main.78da8841.js",
+    "runtime-main.js.map": "/life-in-numbers/static/js/runtime-main.78da8841.js.map",
+    "static/css/2.cda93978.chunk.css": "/life-in-numbers/static/css/2.cda93978.chunk.css",
+    "static/js/2.535d8d75.chunk.js": "/life-in-numbers/static/js/2.535d8d75.chunk.js",
+    "static/js/2.535d8d75.chunk.js.map": "/life-in-numbers/static/js/2.535d8d75.chunk.js.map",
     "index.html": "/life-in-numbers/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/life-in-numbers/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.20729ba4.chunk.js.LICENSE.txt": "/life-in-numbers/static/js/2.20729ba4.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/life-in-numbers/static/media/logo.6ce24c58.svg"
+    "precache-manifest.5f3507a0956ec7bd45074a4ccb19fb4c.js": "/life-in-numbers/precache-manifest.5f3507a0956ec7bd45074a4ccb19fb4c.js",
+    "service-worker.js": "/life-in-numbers/service-worker.js",
+    "static/css/2.cda93978.chunk.css.map": "/life-in-numbers/static/css/2.cda93978.chunk.css.map",
+    "static/css/main.e2c55e50.chunk.css.map": "/life-in-numbers/static/css/main.e2c55e50.chunk.css.map",
+    "static/js/2.535d8d75.chunk.js.LICENSE.txt": "/life-in-numbers/static/js/2.535d8d75.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.843992d3.js",
-    "static/js/2.20729ba4.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.d1a727ac.chunk.js"
+    "static/js/runtime-main.78da8841.js",
+    "static/css/2.cda93978.chunk.css",
+    "static/js/2.535d8d75.chunk.js",
+    "static/css/main.e2c55e50.chunk.css",
+    "static/js/main.8f5a7fa8.chunk.js"
   ]
 }
