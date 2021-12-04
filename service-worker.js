@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/life-in-numbers/precache-manifest.f789765ec7537bbdc3798d7f2769644e.js"
+  "/life-in-numbers/precache-manifest.bc818903ca520de8ada358e614308a0b.js"
 );
 
 self.addEventListener('message', (event) => {

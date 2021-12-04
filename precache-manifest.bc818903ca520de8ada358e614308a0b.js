@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64d8bdbfd54ba907854bd3eaa92876c4",
+    "revision": "e7fed0fe1ddf95bea3d3e7de0a69141b",
     "url": "/life-in-numbers/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/life-in-numbers/static/css/2.cda93978.chunk.css"
   },
   {
-    "revision": "bbeb9f5aec5b4cfc3720",
+    "revision": "ec14b8655d9e6b41b31c",
     "url": "/life-in-numbers/static/css/main.3c4b2f28.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/life-in-numbers/static/js/2.0848090a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bbeb9f5aec5b4cfc3720",
-    "url": "/life-in-numbers/static/js/main.b2b68b70.chunk.js"
+    "revision": "ec14b8655d9e6b41b31c",
+    "url": "/life-in-numbers/static/js/main.74ed5859.chunk.js"
   },
   {
     "revision": "57edf39bab6948ce1f16",
