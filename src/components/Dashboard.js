@@ -296,8 +296,8 @@ return (
         <br></br>
         <h1>Your Current score for the day is {finalScore}/100</h1>
         <br></br>
-        <h3>Est. time to finish remaining tasks - 04:30:16</h3>
-        {/* <Timer /> */}
+        <h3>Est. time to finish remaining tasks - 00:00:00</h3>
+        <Timer />
         {/* <h3>Time Left for today                                - 08:24:44 <Timer /></h3> */}
 
       </div>
