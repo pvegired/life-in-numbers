@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/life-in-numbers/static/css/main.3c4b2f28.chunk.css",
-    "main.js": "/life-in-numbers/static/js/main.94182274.chunk.js",
-    "main.js.map": "/life-in-numbers/static/js/main.94182274.chunk.js.map",
+    "main.css": "/life-in-numbers/static/css/main.2ff4ddc1.chunk.css",
+    "main.js": "/life-in-numbers/static/js/main.70ba156d.chunk.js",
+    "main.js.map": "/life-in-numbers/static/js/main.70ba156d.chunk.js.map",
     "runtime-main.js": "/life-in-numbers/static/js/runtime-main.78da8841.js",
     "runtime-main.js.map": "/life-in-numbers/static/js/runtime-main.78da8841.js.map",
     "static/css/2.cda93978.chunk.css": "/life-in-numbers/static/css/2.cda93978.chunk.css",
-    "static/js/2.e8aa67bb.chunk.js": "/life-in-numbers/static/js/2.e8aa67bb.chunk.js",
-    "static/js/2.e8aa67bb.chunk.js.map": "/life-in-numbers/static/js/2.e8aa67bb.chunk.js.map",
+    "static/js/2.f566f600.chunk.js": "/life-in-numbers/static/js/2.f566f600.chunk.js",
+    "static/js/2.f566f600.chunk.js.map": "/life-in-numbers/static/js/2.f566f600.chunk.js.map",
     "index.html": "/life-in-numbers/index.html",
-    "precache-manifest.44478dac7de3e5c6dad3eebb12d3a7fa.js": "/life-in-numbers/precache-manifest.44478dac7de3e5c6dad3eebb12d3a7fa.js",
+    "precache-manifest.e7831617732343dfe1b11f749ed35701.js": "/life-in-numbers/precache-manifest.e7831617732343dfe1b11f749ed35701.js",
     "service-worker.js": "/life-in-numbers/service-worker.js",
     "static/css/2.cda93978.chunk.css.map": "/life-in-numbers/static/css/2.cda93978.chunk.css.map",
-    "static/css/main.3c4b2f28.chunk.css.map": "/life-in-numbers/static/css/main.3c4b2f28.chunk.css.map",
-    "static/js/2.e8aa67bb.chunk.js.LICENSE.txt": "/life-in-numbers/static/js/2.e8aa67bb.chunk.js.LICENSE.txt"
+    "static/css/main.2ff4ddc1.chunk.css.map": "/life-in-numbers/static/css/main.2ff4ddc1.chunk.css.map",
+    "static/js/2.f566f600.chunk.js.LICENSE.txt": "/life-in-numbers/static/js/2.f566f600.chunk.js.LICENSE.txt",
+    "static/media/todoimage.png": "/life-in-numbers/static/media/todoimage.4a127f5c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.78da8841.js",
     "static/css/2.cda93978.chunk.css",
-    "static/js/2.e8aa67bb.chunk.js",
-    "static/css/main.3c4b2f28.chunk.css",
-    "static/js/main.94182274.chunk.js"
+    "static/js/2.f566f600.chunk.js",
+    "static/css/main.2ff4ddc1.chunk.css",
+    "static/js/main.70ba156d.chunk.js"
   ]
 }
