@@ -260,8 +260,8 @@ function CalculatePersonalScore() {
 // const prevTaskLength = usePrevious(tasks.length);
 
  useEffect(() => {
- GetAverageScoreForDay()
- }, []);
+ CalculatePersonalScore()
+; }, []);
 
 const { currentUser } = useContext(AuthContext);
 if (!currentUser) {
