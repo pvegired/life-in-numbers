@@ -2,12 +2,14 @@ import { Redirect } from "react-router-dom";
 import { AuthContext } from "./Auth";
 import firebaseConfig from "../firebase";
 import React, { useState, useRef, useEffect, useContext, Component } from "react";
-// import Form from "./Form";
-// import FilterButton from "./FilterButton";
-// import Todo from "./Todo";
-// import { nanoid } from 'nanoid';
+import Form from "./Form";
+import FilterButton from "./FilterButton";
+import Todo from "./Todo";
+import { nanoid } from 'nanoid';
 import Timer from "./Timer.js";
 import { getDatabase, ref, onValue, set } from 'firebase/database';
+
+// For showing the datepicker and time left for the day
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -16,6 +18,7 @@ import Bareminimum from "./bareminimum.js";
 import Exceed from "./exceed";
 import Personal from "./personal";
 
+// For importing icons of calendar, edit and delete later
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar} from '@fortawesome/free-solid-svg-icons';

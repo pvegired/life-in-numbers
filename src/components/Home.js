@@ -4,6 +4,7 @@ import { AuthContext } from "./Auth";
 import {auth , provider}  from '../firebase.js';
 import { Redirect } from "react-router-dom";
 
+//primary code for homepage of where the user enters the app for first time
 
 const Home = () => {
   const { currentUser } = useContext(AuthContext);
@@ -11,6 +12,7 @@ const Home = () => {
     const signin = () => {
       auth.signInWithPopup(provider).catch(alert);
   }
+  //redirecting to dashbaord only when we are sure that this user is in our database
   if (currentUser) {
     return <Redirect to="/dashboard" />;
   }
