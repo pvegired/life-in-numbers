@@ -249,6 +249,9 @@ return (
     <div>
       <div className="todoapp stack-large">
         <h1>Personal</h1>
+        <p>Filler tasks that you will
+do only for today and may 
+not be repeated over goes here</p>
         <Progress value={count} />
       <Form addTask={addTask} />
       <div className="filters btn-group stack-exception">

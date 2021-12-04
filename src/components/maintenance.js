@@ -252,6 +252,9 @@ return (
     <div>
       <div className="todoapp stack-large">
         <h1>Maintenance</h1>
+        <p>Things you do to maintain 
+your physical and mental
+health daily goes here</p>
         <Progress value={count} />
       <Form addTask={addTask} />
       <div className="filters btn-group stack-exception">

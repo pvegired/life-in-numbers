@@ -29,16 +29,28 @@ const SignUp = () => {
   }
  
   return (
-    <>
-      <h1>Sign Up</h1>
-      <form onSubmit={handleSubmit}>
-        <label for="email">Email</label>
-        <input type="email" name="email" placeholder="Email" />
-        <label for="password">Password</label>
-        <input type="password" name="password" placeholder="Password" />
-        <button type="submit">Register</button>
-      </form>
-    </>
+    <div className = "homecontainer">
+      <img src={require("../images/todoimage.png")} alt="3d image for quantified todo" />
+          <div id="divLogin" className="login_screen">
+            <h3>Signup for ultimate Todo Experience!</h3>
+            <div className="login-page">
+              <div className="form">
+                  <h3>Create A New Account</h3>
+                  
+                  <form className="login-form" onSubmit={handleSubmit}>
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Email" />
+                    <label for="password"></label>
+                    <input type="password" name="password" placeholder="Password" />
+                    <button className = "homepagebutton" type="submit">Register</button>
+                  </form>
+
+
+              </div> 
+            </div>
+          </div>
+    </div>  
+    
   );
 };
 

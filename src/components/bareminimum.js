@@ -251,6 +251,9 @@ return (
     <div>
       <div className="todoapp stack-large">
         <h1>Bare Minimum</h1>
+        <p>Things that  are expected from
+you by default in your day to
+day career goes here</p>
         <Progress value={count} />
       <Form addTask={addTask} />
       <div className="filters btn-group stack-exception">

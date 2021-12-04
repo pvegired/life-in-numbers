@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 const LogIn = () => {
   const handleSubmit = (e) => {
+    
     e.preventDefault();
     const { email, password } = e.target.elements;
     try {
@@ -22,22 +23,33 @@ const LogIn = () => {
     return <Redirect to="/dashboard" />;
   }
   return (
-    <>
-      <h1>Log In</h1>
-      <form onSubmit={handleSubmit}>
-        <label for="email">Email</label>
-        <input type="email" name="email" placeholder="Email" />
-        <label for="password">Password</label>
-        <input type="password" name="password" placeholder="Password" />
-        <button type="submit">Log In</button>
+    <div className = "homecontainer">
+          <img src={require("../images/todoimage.png")} alt="3d image for quantified todo" />
+          <div id="divLogin" className="login_screen">
+            <h3>Experience the Magic of Quantifiying your Day!</h3>
+              <div className="login-page">
+            <div className="form">
+              <h3>Log In</h3>
+              {/* <form className="login-form" onSubmit={handleSubmit}>
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button className = "homepagebutton" type="submit">login</button>
+                <p class="message">Not registered? <Link to="/signup">Create an account</Link></p>
+              </form> */}
+              <form onSubmit={handleSubmit}>
+            <label for="email"></label>
+            <input type="email" name="email" placeholder="Email" />
+            <label for="password"></label>
+            <input type="password" name="password" placeholder="Password" />
+            <button type="submit">Log In</button>
+            <p class="message">Not registered? <Link to="/signup">Create an account</Link></p>
       </form>
-      <p>
-          <div>
-          <h5> If Haven't Registered, Signup! </h5>
-          <Link to="/signup">Sign Up</Link> 
+
+            </div>
           </div>
-        </p>
-    </>
+          </div>
+          
+    </div>
   );
 };
 

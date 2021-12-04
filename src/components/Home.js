@@ -16,8 +16,9 @@ const Home = () => {
   }
   return (
     <div className = "homecontainer">
+      <img src={require("../images/todoimage.png")} alt="3d image for quantified todo" />
       <div id="divLogin" class="login_screen">
-      <h3>Experience the Magic of Quantification!</h3>
+      <h3>Experience the Magic of Quantifiying your Day!</h3>
       <br></br>
       <br></br>
       {currentUser ? (
@@ -27,31 +28,15 @@ const Home = () => {
       ) : (
         <p>
 
-        {/* <div class="container">
-  
-        <div id="divLogin" class="login_screen">
-          <h2 id="spnLogin">Sign In</h2>
-          <input id="txtLoginId" type="text" placeholder="Email Id" />
-          <input id="txtLoginPass" type="password" placeholder="Password" />
-          <a Link to="/login" class="btn">
-            Log In
-          </a>
-          <a class="homepagebutton"  onClick={signin}>Sign In with Google</a>
-        </div>
-
-      </div> */}
-
 
           <div>
-          <Link to="/login" class="homepagebutton">Log In</Link> 
+          <Link to="/login" className="homepagebutton">Log In</Link> 
           <br></br>
-          <Link to="/signup" class="homepagebutton">Sign Up</Link> 
+          <Link to="/signup" className="homepagebutton">Sign Up</Link> 
           </div>
-          {/* <p> OR </p> */}
           <br></br>
           <div>
-          {<button onClick={signin} class="homepagebutton">Sign In with Google</button> }
-            {/* <Link to={signin}>Sign In with Google</Link> */}
+          {<button onClick={signin} className="homepagebutton" id="specialbutton">Sign In with Google</button> }
           </div>
         </p>
       )}

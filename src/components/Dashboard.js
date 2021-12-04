@@ -2,10 +2,10 @@ import { Redirect } from "react-router-dom";
 import { AuthContext } from "./Auth";
 import firebaseConfig from "../firebase";
 import React, { useState, useRef, useEffect, useContext, Component } from "react";
-import Form from "./Form";
-import FilterButton from "./FilterButton";
-import Todo from "./Todo";
-import { nanoid } from 'nanoid';
+// import Form from "./Form";
+// import FilterButton from "./FilterButton";
+// import Todo from "./Todo";
+// import { nanoid } from 'nanoid';
 import Timer from "./Timer.js";
 import { getDatabase, ref, onValue, set } from 'firebase/database';
 
@@ -16,64 +16,13 @@ import Bareminimum from "./bareminimum.js";
 import Exceed from "./exceed";
 import Personal from "./personal";
 
-// import {calendar} from 'react-icons/fa';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar} from '@fortawesome/free-solid-svg-icons';
 
 const element = <FontAwesomeIcon icon={faCalendar} />
 
-// class Like extends Component {
-//   render() {
-//     return <calendar />  
-//   }
-// }
 
-// const calendaricon = <Like />
-
-
-
-
-// const PERSONAL = [
-//   { id: "todo-0", name: "Call David", completed: true },
-//   { id: "todo-1", name: "Submit Registration Form", completed: false },
-//   { id: "todo-2", name: "Meet Linda", completed: false }
-// ];
-
-// const MAINTENANCE = [
-//   { id: "todo-0", name: "6 hrs of Sleep", completed: true },
-//   { id: "todo-1", name: "40 mins of Exercise", completed: false },
-//   { id: "todo-2", name: "15 mins of Meditation", completed: false }
-// ];
-
-// const BAREMINIMUM = [
-//   { id: "todo-0", name: "Attend All Classes", completed: true },
-//   { id: "todo-1", name: "3hrs of Assignments", completed: false },
-//   { id: "todo-2", name: "1hr of Job Search Efforts", completed: false }
-// ];
-
-// const EXCEED = [
-//   { id: "todo-0", name: "Publish a Blog", completed: true },
-//   { id: "todo-1", name: "1 hr of Coursera", completed: false },
-// ];
-
-// const masterList = [PERSONAL, MAINTENANCE, BAREMINIMUM, EXCEED];
-
-// function usePrevious(value) {
-//   const ref = useRef();
-//   useEffect(() => {
-//     ref.current = value;
-//   });
-//   return ref.current;
-// }
-
-// const FILTER_MAP = {
-//   All: () => true,
-//   Active: task => !task.completed,
-//   Completed: task => task.completed
-// };
-
-// const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 const Dashboard = () =>  {
 
@@ -84,8 +33,7 @@ const [scoreB, setScoreB] = useState(0);
 const [scoreE, setScoreE] = useState(0);
 const [finalScore, setFinalScore] = useState(0);
 
-//const { count, setCount } = personal();
-//onsole.log("count" +count);
+
 let personal = 0;
 const handlescore = (score) => {
   let a = (score/100)
@@ -123,21 +71,6 @@ function GetAverageScoreForDay() {
   var reference = ref(db, 'users/' + user.uid +'/'+ datestring+ '/score/');
   console.log("hiii")
   CalculatePersonalScore();
-/* onValue(reference, (snapshot) => {
-    console.log(snapshot.val())
-    snapshot.forEach(snapshot1 => {
-      if (snapshot1.val().exists === true) {
-        var id = snapshot1.val().percentage
-        var score = Number(id)
-        totalScore = totalScore + (25*score)
-        console.log(score)
-      }
-      //setFinalScore(totalScore)
-    });   
-    setFinalScore(totalScore)
-    handlescore(totalScore)
-  
-  });*/
 }
 
 function CalculatePersonalScore() {
@@ -149,7 +82,7 @@ function CalculatePersonalScore() {
 
   onValue(reference, (snapshot) => {
     var highscore = 0;
-    var totalpercentage = 0
+    var totalpercentage = 0;
     snapshot.forEach(snapshot1 => {
       var completedTasks = 0;
       var totalTaskCount = 0 ;
@@ -173,7 +106,8 @@ function CalculatePersonalScore() {
       percentage = Math.floor(per)
     }
     
-    totalpercentage = totalpercentage + percentage
+    totalpercentage = totalpercentage + percentage;
+
   });   
  highscore = Math.floor(totalpercentage/4);
  console.log("score " + highscore)
@@ -181,83 +115,6 @@ function CalculatePersonalScore() {
   });
  
 }
-// const [tasks, setTasks] = useState(PERSONAL);
-// // const [tasks, setTasks] = useState(masterList);
-// const [filter, setFilter] = useState('All');
-
-// function toggleTaskCompleted(id) {
-//   const updatedTasks = tasks.map(task => {
-//     // if this task has the same ID as the edited task
-//     if (id === task.id) {
-//       // use object spread to make a new obkect
-//       // whose `completed` prop has been inverted
-//       return {...task, completed: !task.completed}
-//     }
-//     return task;
-//   });
-//   setTasks(updatedTasks);
-// }
-
-
-// function deleteTask(id) {
-//   const remainingTasks = tasks.filter(task => id !== task.id);
-//   setTasks(remainingTasks);
-// }
-
-
-// function editTask(id, newName) {
-//   const editedTaskList = tasks.map(task => {
-//   // if this task has the same ID as the edited task
-//     if (id === task.id) {
-//       //
-//       return {...task, name: newName}
-//     }
-//     return task;
-//   });
-//   setTasks(editedTaskList);
-// }
-
-// const taskList = tasks
-// .filter(FILTER_MAP[filter])
-// .map(task => (
-//   <Todo
-//     id={task.id}
-//     name={task.name}
-//     completed={task.completed}
-//     key={task.id}
-//     toggleTaskCompleted={toggleTaskCompleted}
-//     deleteTask={deleteTask}
-//     editTask={editTask}
-//   />
-// ));
-
-// const filterList = FILTER_NAMES.map(name => (
-//   <FilterButton
-//     key={name}
-//     name={name}
-//     isPressed={name === filter}
-//     setFilter={setFilter}
-//   />
-// ));
-
-// const score = () => {
-//   console.log(FILTER_MAP[1]);
-//   console.log(((tasks.filter(FILTER_MAP[1])).length));
-  // const score = ((((tasks.filter(FILTER_MAP[1])).length) / ((tasks.filter(FILTER_MAP[0])).length) * 100 ));
-
-
-
-// function addTask(name) {
-//   const newTask = { id: "todo-" + nanoid(), name: name, completed: false };
-//   setTasks([...tasks, newTask]);
-// }
-
-
-// const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
-// const headingText = `${taskList.length} ${tasksNoun} remaining`;
-
-// const listHeadingRef = useRef(null);
-// const prevTaskLength = usePrevious(tasks.length);
 
  useEffect(() => {
  CalculatePersonalScore()
@@ -298,43 +155,25 @@ return (
         <br></br>
         <h3>Est. time to finish remaining tasks - 00:00:00</h3>
         <Timer />
-        {/* <h3>Time Left for today                                - 08:24:44 <Timer /></h3> */}
-
       </div>
+
+      {/* html for Task or todo containers */}
       <div className="taskcontainer">
-      
-        {/* <section className="todoapp stack-large">
-          <h1>Personal</h1>
-        <Form addTask={addTask} />
-        <div className="filters btn-group stack-exception">
-          {filterList}
-        </div>
-        <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
-          {headingText}
-        </h2>
-        <ul
-          role="list"
-          className="todo-list stack-large stack-exception"
-          aria-labelledby="list-heading"
-        >
-          {taskList}
-        </ul>
-      </section> */}
       <Personal />
       <Maintenance />
       <Bareminimum />
       <Exceed />
-    </div>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <p>Developed With Music and Love by Pradeep</p>
-    <br></br>
-    <br></br>
-    <br></br>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <p>Developed With Music and Love by Pradeep</p>
+      <br></br>
+      <br></br>
+      <br></br>
   </div>
   );
 }
