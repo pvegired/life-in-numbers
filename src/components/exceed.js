@@ -221,10 +221,8 @@ const prevTaskLength = usePrevious(tasks.length);
 useEffect(() => {
   fetchDataFromFirebase();
   CalculatePersonalScore();
-  if (tasks.length - prevTaskLength === -1) {
-    listHeadingRef.current.focus();
-  }
-}, [tasks.length, prevTaskLength]);
+}, []);
+
 
 const { currentUser } = useContext(AuthContext);
 if (!currentUser) {

@@ -156,7 +156,7 @@ return (
         <br></br>
         <h1>Your Current score for the day is {finalScore}/100</h1>
         <br></br>
-        <h3>Est. time to finish remaining tasks - 00:00:00</h3>
+        {/* <h3>Est. time to finish remaining tasks - 00:00:00</h3> */}
         <Timer />
       </div>
 
