@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c4b2f28.chunk.css",
-    "main.js": "/static/js/main.b8c54983.chunk.js",
-    "main.js.map": "/static/js/main.b8c54983.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2ae115fb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2ae115fb.js.map",
-    "static/css/2.cda93978.chunk.css": "/static/css/2.cda93978.chunk.css",
-    "static/js/2.d7acffa0.chunk.js": "/static/js/2.d7acffa0.chunk.js",
-    "static/js/2.d7acffa0.chunk.js.map": "/static/js/2.d7acffa0.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.585a46cf73f10c0db8b7638f7d87e8cc.js": "/precache-manifest.585a46cf73f10c0db8b7638f7d87e8cc.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.cda93978.chunk.css.map": "/static/css/2.cda93978.chunk.css.map",
-    "static/css/main.3c4b2f28.chunk.css.map": "/static/css/main.3c4b2f28.chunk.css.map",
-    "static/js/2.d7acffa0.chunk.js.LICENSE.txt": "/static/js/2.d7acffa0.chunk.js.LICENSE.txt"
+    "main.css": "/life-in-numbers/static/css/main.3c4b2f28.chunk.css",
+    "main.js": "/life-in-numbers/static/js/main.b2b68b70.chunk.js",
+    "main.js.map": "/life-in-numbers/static/js/main.b2b68b70.chunk.js.map",
+    "runtime-main.js": "/life-in-numbers/static/js/runtime-main.78da8841.js",
+    "runtime-main.js.map": "/life-in-numbers/static/js/runtime-main.78da8841.js.map",
+    "static/css/2.cda93978.chunk.css": "/life-in-numbers/static/css/2.cda93978.chunk.css",
+    "static/js/2.0848090a.chunk.js": "/life-in-numbers/static/js/2.0848090a.chunk.js",
+    "static/js/2.0848090a.chunk.js.map": "/life-in-numbers/static/js/2.0848090a.chunk.js.map",
+    "index.html": "/life-in-numbers/index.html",
+    "precache-manifest.f789765ec7537bbdc3798d7f2769644e.js": "/life-in-numbers/precache-manifest.f789765ec7537bbdc3798d7f2769644e.js",
+    "service-worker.js": "/life-in-numbers/service-worker.js",
+    "static/css/2.cda93978.chunk.css.map": "/life-in-numbers/static/css/2.cda93978.chunk.css.map",
+    "static/css/main.3c4b2f28.chunk.css.map": "/life-in-numbers/static/css/main.3c4b2f28.chunk.css.map",
+    "static/js/2.0848090a.chunk.js.LICENSE.txt": "/life-in-numbers/static/js/2.0848090a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2ae115fb.js",
+    "static/js/runtime-main.78da8841.js",
     "static/css/2.cda93978.chunk.css",
-    "static/js/2.d7acffa0.chunk.js",
+    "static/js/2.0848090a.chunk.js",
     "static/css/main.3c4b2f28.chunk.css",
-    "static/js/main.b8c54983.chunk.js"
+    "static/js/main.b2b68b70.chunk.js"
   ]
 }
