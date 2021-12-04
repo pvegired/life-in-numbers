@@ -144,6 +144,8 @@ function deleteTask(id) {
     id: null
   });
   fetchDataFromFirebase();
+  CalculatePersonalScore();
+
 }
 
 
@@ -209,6 +211,8 @@ function addTask(name) {
       completed : newTask.completed
     });
     fetchDataFromFirebase();
+    CalculatePersonalScore();
+
 }
 
 

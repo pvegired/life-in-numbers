@@ -59,7 +59,7 @@ function Datemagic() {
   }} />;
 
   let newDate = date;
-  console.log(newDate)
+ 
   var datestring = newDate.getDate() + "-" + (newDate.getMonth()+1) + "-" + newDate.getFullYear();
   return datepicker;
 }
@@ -72,7 +72,7 @@ function GetAverageScoreForDay() {
   var i = 0;
   var totalScore = 0;
   var reference = ref(db, 'users/' + user.uid +'/'+ datestring+ '/score/');
-  console.log("hiii")
+  
   CalculatePersonalScore();
 }
 
@@ -113,7 +113,7 @@ function CalculatePersonalScore() {
 
   });   
  highscore = Math.floor(totalpercentage/4);
- console.log("score " + highscore)
+ 
  setFinalScore(highscore)
   });
  
@@ -127,7 +127,7 @@ const { currentUser } = useContext(AuthContext);
 if (!currentUser) {
   return <Redirect to="/" />;
 }
-console.log(date)
+
 return (
     <div className="container">
 
