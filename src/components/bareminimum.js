@@ -256,9 +256,6 @@ return (
       <div className="filters btn-group stack-exception">
         {filterList}
       </div>
-      <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
-        {headingText}
-      </h2>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
