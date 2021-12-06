@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/life-in-numbers/static/css/main.7ed71d33.chunk.css",
+    "main.css": "/life-in-numbers/static/css/main.7e0a8760.chunk.css",
     "main.js": "/life-in-numbers/static/js/main.1df5265d.chunk.js",
     "main.js.map": "/life-in-numbers/static/js/main.1df5265d.chunk.js.map",
     "runtime-main.js": "/life-in-numbers/static/js/runtime-main.78da8841.js",
@@ -9,10 +9,10 @@
     "static/js/2.1a27a4fa.chunk.js": "/life-in-numbers/static/js/2.1a27a4fa.chunk.js",
     "static/js/2.1a27a4fa.chunk.js.map": "/life-in-numbers/static/js/2.1a27a4fa.chunk.js.map",
     "index.html": "/life-in-numbers/index.html",
-    "precache-manifest.a5282f2c6350d97368a7a66b7d1a2881.js": "/life-in-numbers/precache-manifest.a5282f2c6350d97368a7a66b7d1a2881.js",
+    "precache-manifest.b86b99998af62391379876abca9b63cd.js": "/life-in-numbers/precache-manifest.b86b99998af62391379876abca9b63cd.js",
     "service-worker.js": "/life-in-numbers/service-worker.js",
     "static/css/2.cda93978.chunk.css.map": "/life-in-numbers/static/css/2.cda93978.chunk.css.map",
-    "static/css/main.7ed71d33.chunk.css.map": "/life-in-numbers/static/css/main.7ed71d33.chunk.css.map",
+    "static/css/main.7e0a8760.chunk.css.map": "/life-in-numbers/static/css/main.7e0a8760.chunk.css.map",
     "static/js/2.1a27a4fa.chunk.js.LICENSE.txt": "/life-in-numbers/static/js/2.1a27a4fa.chunk.js.LICENSE.txt",
     "static/media/todoimage.png": "/life-in-numbers/static/media/todoimage.4a127f5c.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.78da8841.js",
     "static/css/2.cda93978.chunk.css",
     "static/js/2.1a27a4fa.chunk.js",
-    "static/css/main.7ed71d33.chunk.css",
+    "static/css/main.7e0a8760.chunk.css",
     "static/js/main.1df5265d.chunk.js"
   ]
 }
