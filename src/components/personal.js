@@ -250,7 +250,7 @@ let Progress = (props) => {
 return (
     <div>
       <div className="todoapp stack-large">
-        <h1>Personal</h1>
+        <h1><strong>Personal</strong></h1>
         <h5>Filler tasks that you will
 do only for today and may 
 not be repeated over goes here</h5>

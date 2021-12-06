@@ -158,7 +158,7 @@ body {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #3498db;
+  background: #a586d5;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -171,7 +171,7 @@ body {
 .form button:hover,
 .form button:active,
 .form button:focus {
-  background: #43a047;
+  background: #b3a0de;
 }
 .form .message {
   margin: 15px 0 0;
@@ -377,7 +377,8 @@ nav a:hover {
 
 .Progress-Bar {
   height: 100%;
-  background: linear-gradient(90deg, red, yellow, green);
+  /* background: linear-gradient(90deg, red, yellow, green); */
+  background: linear-gradient(90deg, #a586d5, #b3a0de, #d8c9f9);
 }
 
 #textleft {

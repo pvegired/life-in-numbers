@@ -252,7 +252,7 @@ let Progress = (props) => {
 return (
     <div>
       <div className="todoapp stack-large">
-        <h1>Career</h1>
+        <h1><strong>Career</strong></h1>
         <h5>Things that  are expected from
 you by default in your day to
 day career goes here</h5>
