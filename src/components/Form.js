@@ -4,14 +4,26 @@ function Form(props) {
   const [name, setName] = useState('');
 
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   if (!name.trim()) {
+  //     return;
+  //   }
+  //   props.addTask(name);
+  //   setName("");
+  // }
+
+  const handleSubmit = (event) => {
+    if(event.key === 'Enter') {
+      event.preventDefault();
     if (!name.trim()) {
       return;
     }
     props.addTask(name);
     setName("");
+    }
   }
+
 
 
   function handleChange(e) {
@@ -19,12 +31,13 @@ function Form(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2 className="label-wrapper">
+    <form>
+      {/* <h2 className="label-wrapper">
         <label htmlFor="new-todo-input" className="label__lg">
           What needs to be done?
         </label>
-      </h2>
+      </h2> */}
+      <div className="formflex form1">
 
       <input
         type="text"
@@ -32,12 +45,22 @@ function Form(props) {
         className="input input__lg"
         name="text"
         autoComplete="off"
+        placeholder="Add a task"
         value={name}
         onChange={handleChange}
+        // onKeyPress={(event) => {
+        //         if (event.key === 'Enter') {
+        //         this.handleSubmit
+        //         }
+        //       }}
+        onKeyPress={handleSubmit}
+                
+                  
       />
-      <button type="submit" className="btn btn__primary btn__lg">
+      {/* <button type="submit" className="btn btn-primary btn-sm">
         Add
-      </button>
+      </button> */}
+      </div>
     </form>
   );
 }

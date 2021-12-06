@@ -17,6 +17,7 @@ import Maintenance from "./maintenance.js";
 import Bareminimum from "./bareminimum.js";
 import Exceed from "./exceed";
 import Personal from "./personal";
+import Emoji from "./Emoji";
 
 // For importing icons of calendar, edit and delete later
 
@@ -129,55 +130,56 @@ if (!currentUser) {
 }
 
 return (
-    <div className="container">
+    <div className="container1">
 
-      {/* html for logo and navigation options */}
-      <div className = "navigation">
-          <div>
-              <a id="logo">Day Quantifier</a>
+          {/* html for logo and navigation options */}
+          <div className = "navigation">
+              <div>
+                  <a id="logo">Day Quantifier</a>
+              </div>
+              <nav>
+              <ul className = "navlist">
+                  <li><a>To do</a></li>
+                  <li><a>Insights</a></li>
+                  <li><a onClick={() => firebaseConfig.auth().signOut()}>Sign Out</a></li>
+              </ul>
+              </nav>
           </div>
-          <nav>
-          <ul className = "navlist">
-              <li><a>To do</a></li>
-              <li><a>Insights</a></li>
-              <li><a onClick={() => firebaseConfig.auth().signOut()}>Sign Out</a></li>
-          </ul>
-          </nav>
-      </div>
-      {/* html for body text */}
-      <div className="text">
-        {element}
-        
-        <p><strong>Date:</strong></p>
-         {Datemagic()}
-       
-        <br></br>
-        <br></br>
-        <br></br>
-        <h1>Your Current score for the day is {finalScore}/100</h1>
-        <br></br>
-        {/* <h3>Est. time to finish remaining tasks - 00:00:00</h3> */}
-        <Timer />
-      </div>
+          {/* html for body text */}
+          <div className="text">
+            {/* {element} */}
+            <Emoji symbol="📅" label="Calendar"/>
+            
+            <p><strong>Date:</strong></p>
+            {Datemagic()}
+          
+            <br></br>
+            <br></br>
+            <br></br>
+            <h1>Your Current score for the day is {finalScore}/100</h1>
+            <br></br>
+            {/* <h3>Est. time to finish remaining tasks - 00:00:00</h3> */}
+            <Timer />
+          </div>
 
-      {/* html for Task or todo containers */}
-      <div className="taskcontainer">
-      <Personal />
-      <Maintenance />
-      <Bareminimum />
-      <Exceed />
+          {/* html for Task or todo containers */}
+          <div className="taskcontainer">
+          <Personal />
+          <Maintenance />
+          <Bareminimum />
+          <Exceed />
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <h5>Developed With <Emoji symbol="🎵" label="Music"/> and <Emoji symbol="❤️" label="love"/>  by <a href="https://pradeep.digital" >Pradeep</a></h5>
+          <br></br>
+          <br></br>
+          <br></br>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <p>Developed With Music and Love by Pradeep</p>
-      <br></br>
-      <br></br>
-      <br></br>
-  </div>
   );
 }
 

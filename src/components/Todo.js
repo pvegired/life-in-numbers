@@ -73,22 +73,22 @@ export default function Todo(props) {
   );
 
   const viewTemplate = (
-    <div className="stack-small">
-      <div className="c-cb">
-          <input
+    <div className="todoitem">
+      {/* <div className="c-cb"> */}
+          <input className="checkboxstyle"
             id={props.id}
             type="checkbox"
             defaultChecked={props.completed}
             onChange={() => props.toggleTaskCompleted(props.id)}
           />
-          <label className="todo-label" id="textleft" htmlFor={props.id}>
+          <label className="todoname" id="textleft" htmlFor={props.id}>
             {props.name}
           </label>
-        </div>
-        <div className="btn-group">
+        {/* </div> */}
+        {/* <div className="btn-group"> */}
         <button
           type="button"
-          className="btn"
+          className="btn todoitembutton"
           onClick={() => setEditing(true)}
           ref={editButtonRef}
           >
@@ -96,12 +96,12 @@ export default function Todo(props) {
           </button>
           <button
             type="button"
-            className="btn btn__danger"
+            className="btn todoitembutton"
             onClick={() => props.deleteTask(props.id)}
           >
             {element2}  <span className="visually-hidden">{props.name}</span>
           </button>
-        </div>
+        {/* </div> */}
     </div>
   );
 

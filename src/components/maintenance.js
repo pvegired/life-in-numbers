@@ -253,10 +253,10 @@ let Progress = (props) => {
 return (
     <div>
       <div className="todoapp stack-large">
-        <h1>Maintenance</h1>
-        <p>Things you do to maintain 
+        <h1>Health</h1>
+        <h5>Things you do to maintain 
 your physical and mental
-health daily goes here</p>
+health daily goes here</h5>
         <Progress value={count} />
       <Form addTask={addTask} />
       <div className="filters btn-group stack-exception">
